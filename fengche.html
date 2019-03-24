@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>开心游乐园</title>
+    <style>
+        body{
+            margin:0;
+            background-image: url(img/bg.png); 
+        }
+        .skywheel{
+            position:relative;
+            width:768px;
+            height:768px;
+            margin:33px auto 0 auto;
+            /*background-color: #a33838;*/
+            background-image: url(img/fsw.png);
+            animation:changeRotate 5s infinite linear;
+
+        }
+        .pic1{
+            position:absolute;
+            top:300px;
+            width:130px;
+            height:170px;
+            background-image: url(img/boy.png);
+            animation:changeRotates 5s infinite linear;
+        }
+        .pic2{
+            position:absolute;
+            left:325px;
+            top:655px;
+            width:130px;
+            height:170px;
+            background-image: url(img/girl.png);
+            animation:changeRotates 5s infinite linear;
+        }
+        .pic3{
+            position: absolute;
+            left:655px;
+            top:300px;
+            width:130px;
+            height:170px;
+            background-image: url(img/shamegirl.png);
+            animation:changeRotates 5s infinite linear;
+        }
+        @keyframes changeRotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes changeRotates{
+            from{
+                transform: rotate(0deg)
+            }
+            to{
+                transform: rotate(-360deg)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="skywheel">
+        <!--<img src="img/fsw.png" alt="摩天轮">-->
+        <div class="pic1"></div>
+        <div class="pic2"></div>
+        <div class="pic3"></div>
+    </div>
+</body>
+</html>

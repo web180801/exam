@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>淘宝美食汇</title>
+    <style>
+        body,ul{ margin:0;padding:0}
+        .content{
+            width:1200px;
+            height:420px;
+            margin:100px auto;
+            box-shadow:0 0 10px #000;
+        }
+        ul{
+            list-style: none;
+        }
+        .clearfix:after{
+            content:"";  /*就是添加的内容*/
+            display:block;
+            clear:both; /*清楚浮动*/
+        }
+        li{
+            width:376px;
+            height:180px;
+            float:left;
+            margin:10px 7px;
+            border:5px solid #fff;
+            box-shadow:0 0 1px #000;
+            cursor:pointer;
+        }
+        img{
+            width:100%;
+            height:100%;
+        }
+        .title{
+            width:100%;
+            height:100%;
+            background-color: rgba(0,0,0,.3);
+            transform:translateY(-202px)scale(0);/*变换：移动*/
+            transition-duration: .3s;
+        }
+        li:hover .title{
+            transform:translateY(-202px)scale(1);
+        }
+        h3,p{
+            color:#fff;
+            text-align: center;
+        }
+        h3{
+            line-height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <ul class="clearfix">
+            <li>
+                <img src="images/01.webp" alt="">
+                <div class="title">
+                    <h3>口水菌品鉴</h3>
+                    <p>你说啥哈哈哈哈哈</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/02.webp" alt="">
+                <div class="title">
+                    <h3>口水菌品鉴</h3>
+                    <p>吼吼吼哈哈哈哈哈</p>
+                </div>
+                </li>
+            <li>
+                <img src="images/03.webp" alt="">
+                <div class="title">
+                    <h3>口水菌品鉴</h3>
+                    <p>啦啦啦啦啦啦绿绿绿绿</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/04.webp" alt="">
+                <div class="title">
+                    <h3>口水菌品鉴</h3>
+                    <p>横额和那个横额呵呵</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/05.webp" alt="">
+                <div class="title">
+                    <h3>口水菌品鉴</h3>
+                    <p>哈哈哈哈哈你说啥</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/06.webp" alt="">
+                <div class="title">
+                    <h3>口水菌品鉴</h3>
+                    <p>哈哈哈哈哈而我的顺丰到付</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
